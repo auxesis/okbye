@@ -1,0 +1,4 @@
+#!/bin/bash
+
+fdm -k fetch
+notmuch new
