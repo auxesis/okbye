@@ -21,6 +21,11 @@ get '/thread/:thread_id' do
   haml :thread
 end
 
+get '/reload' do 
+  `#{root.join('bin')}/m`
+  redirect '/'
+end
+
 get '/' do 
   @index = NotMuch::Index.new 
   @query = params[:search].blank? ? "tag:inbox" : params[:search]
