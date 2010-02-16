@@ -1,0 +1,13 @@
+%h1 Inbox
+
+%form{:action => "/", :method => "get"}
+  %input{:type => "text", :name => "search", :value => @query}
+  %input{:type => "submit", :value => "search"}
+
+%table 
+  - @messages.each do |message|
+    %tr
+      %td.from{:title => message.from}= message.short_from
+      %td.subject
+        %a{:href => "/thread/#{message.thread_id}", :id => message.thread_id}= message.subject
+      %td.when= message.when

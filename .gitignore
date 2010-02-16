@@ -1,0 +1,10 @@
+config/profiles.yaml
+.DS_Store
+log/*
+tmp/*
+*~
+.#*
+webrat*
+.bundle/
+vendor/gems/*
+!vendor/gems/cache/

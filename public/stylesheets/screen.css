@@ -1,0 +1,15 @@
+form {
+  margin-bottom: 16px;
+}
+
+table td.from {
+  width: 125px;
+}
+
+table td.subject {
+  width: 600px;
+}
+
+table td.when {
+  color: #999;
+}
