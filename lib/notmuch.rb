@@ -36,8 +36,6 @@ module NotMuch
         @thread_id = @raw_search_result.split.first.split(':').last
         @from = @raw_search_result.split('] ')[1].split(';').first
         @when = @raw_search_result[25..36].strip
-
-        puts @raw_search_result
       when @raw_show_result 
         lines  = @raw_show_result.split("\n")
         hstart  = lines.index(lines.find {|l| l =~ /header\{/}) + 2
