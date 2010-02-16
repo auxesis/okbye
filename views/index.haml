@@ -1,4 +1,9 @@
-%h1 Inbox
+- if @query != "tag:inbox"
+  %h1
+    Search: 
+    = @query
+- else 
+  %h1 Inbox 
 
 %form{:action => "/", :method => "get"}
   %input{:type => "text", :name => "search", :value => @query}
