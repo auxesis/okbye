@@ -33,7 +33,11 @@ Running
 
 Boot the app with: 
 
-    shotgun 
+    rackup
+
+To develop, run with shotgun: 
+
+    shotgun
 
 
 Licence
