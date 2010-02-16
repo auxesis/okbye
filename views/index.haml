@@ -8,6 +8,8 @@
 %form{:action => "/", :method => "get"}
   %input{:type => "text", :name => "search", :value => @query}
   %input{:type => "submit", :value => "search"}
+  %a{:href => "/reload"} check mail
+
 
 %table 
   - @messages.each do |message|
