@@ -22,7 +22,7 @@ get '/thread/:thread_id' do
 end
 
 get '/reload' do 
-  `#{root.join('bin')}/m`
+  `#{root.join('bin')}/fetch-and-index`
   redirect '/'
 end
 
